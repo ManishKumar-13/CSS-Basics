@@ -1,0 +1,106 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure full height of the viewport */
+    background-color: black;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+header, nav, main, aside, section, article, footer {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(52, 152, 219);
+    color: black;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav {
+    background-color: rgba(41, 128, 185, 1);
+    color: rgba(52, 152, 219, 1);
+}
+
+/* main */
+
+.middle {
+    display: flex;
+}
+
+main {
+    flex: 4;
+    box-sizing: border-box;
+    width: 60%;
+    background-color: rgba(241, 196, 15, 1);
+    padding: 10px;
+}
+
+main h1 {
+    margin-bottom: 10px;
+}
+.section-inside-main,
+.article-inside-main {
+    margin-bottom: 10px;
+    background-color: rgba(243, 156, 16, 1);
+}
+
+.section-inside-main {
+    color: rgba(241, 196, 15, 1);
+}
+
+.article-inside-main {
+    background-color: rgba(230, 126, 34, 1);
+    text-align: center;
+    color: rgba(243, 156, 16, 1);
+}
+
+/* aside */
+aside {
+    flex: 1;
+    box-sizing: border-box;
+    background-color: rgba(231, 76, 60, 1);
+    padding: 10px;
+}
+
+aside h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-inside-aside {
+    text-align: center;
+    background-color: rgba(192, 57, 43, 1);
+    margin-bottom: 5px;
+    height: 110px; /* Set the height as needed */
+    color: rgba(231, 76, 60, 1);
+}
+
+footer {
+    background-color: rgba(46, 204, 113, 1);
+    color: #000000;
+    clear: both;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Equalize heights of main and aside */
+.middle {
+    align-items: stretch;
+}
